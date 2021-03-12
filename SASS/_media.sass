@@ -1,0 +1,144 @@
+@media (max-width: 991px) 
+        .container
+            margin: 0 auto
+            max-width: 950px
+            padding: 0 14px
+
+        #searchBar 
+            width: 400px
+        
+        .main
+            &_title
+                h1
+                    font-size: 50px
+                    line-height: 75px
+        
+        .footer_title 
+            font-size: 15px
+            line-height: 16px
+
+@media (max-width: 767px)
+    
+    .subheader
+            display: none
+    .header
+        &_mobile 
+            padding: 0 16px
+            min-height: 72px
+            column-gap: 8px
+            width: 100vw
+            display: grid
+            grid-template-areas: "burger search logo basket circle"
+            grid-template-columns: 20px 20px 1fr 15px 22px
+            align-items: center
+            &_burger
+                grid-area: burger
+                height: 20px
+                width: 15px
+                img
+                    width: 100%
+                    height: 100%
+            &_search
+                grid-area: search
+                height: 18px
+                width: 18px
+                img
+                    width: 100%
+                    height: 100%
+            &_logo
+                grid-area: logo
+                justify-self: center
+            &_basket
+                grid-area: basket
+            &_circle
+                grid-area: circle
+                height: 22px
+                width: 22px
+                border-radius: 50%
+                background-color: #F2DA91
+                display: flex
+                align-items: center
+                justify-content: center
+                span
+                    font-weight: 600
+                    font-size: 11px
+                    line-height: 16px
+                    text-align: center
+                    letter-spacing: 0.2px
+        &_wrapper
+            display: none
+
+    .main 
+        margin-top: 0
+        height: 555px
+        &_title
+            display: none
+
+    .register
+        min-height: 130px
+        &_wrapper
+            margin: 24px auto
+            grip-row-gap: 14px
+            width: 328px
+            #email
+                width: 224px 
+            #button
+                width: 96px
+                height: 32px
+        &_dscr
+            font-size: 12px
+            line-height: 18px
+            letter-spacing: 0.872727px
+
+    .footer
+        padding: 16px 16px
+        &_menu
+            display: none
+        &_mobile
+            display: flex
+            flex-direction: column
+            &_item
+                position: relative
+                display: grid
+                grid-template-columns: 1fr 20px
+                grid-template-areas: "name chevron" "line line"
+                margin-top: 10px
+                justify-content: center
+                align-items: center
+                &_name
+                    grid-area: name
+                &_line 
+                    grid-area: line
+                    margin-top: 16px
+                    height: 1px
+                    border: 1px solid #E1E0E1
+                    width: 100%
+            &_social
+                font-size: 18px
+                display: flex
+                width: 185px
+                margin: 10px auto
+
+            &_submenu
+                display: none
+.active
+    display: block         
+.chevron 
+    margin-right: 10px
+    grid-area: chevron
+    width: 16px
+    height: 16px
+    border-top: 1px solid black
+    border-right: 1px solid black
+    background-color: #F7F7F7
+    transform: rotate(45deg)
+    &_active 
+        transform: rotate(135deg)
+    &_nav
+        grid-area: chevron
+        width: 13px
+        height: 13px
+        border-top: 1px solid black
+        border-right: 1px solid black
+        background-color: $white
+        transform: rotate(45deg)

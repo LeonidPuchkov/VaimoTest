@@ -1,0 +1,121 @@
+//Main
+main 
+    position: relative
+.main
+    background: url(../img/main1.png) center (center / cover) no-repeat
+    margin-top: 24px
+    width: 100vw
+    height: 63vh
+    &_title
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%, -50%)
+        h1
+            font-weight: bold
+            font-size: 60px
+            line-height: 90px
+            color: $white
+
+//Registration section
+.register
+    width: 100vw
+    background-color: $white
+    &_wrapper
+        margin: 32px auto
+        width: 400px
+        display: grid
+        grid-row-gap: 12px
+        grid-template-areas: "dscr" "form"
+    &_dscr
+        grid-area: dscr
+        font-weight: normal
+        color: $black
+        font-size: 12px
+        line-height: 18px
+        letter-spacing: 0.872727px
+    &_form 
+        grid-area: form
+        display: grid
+        grid-column-gap: 12px
+        grid-template-areas: "email button"
+#email 
+    grid-area: email
+    width: 334px
+    border: 1px solid #E1E0E1
+    border-radius: 3px
+    padding: 6px 11px
+    &::placeholder
+        font-family: $poppins
+        font-weight: 500
+        font-size: 11px
+        line-height: 16px
+        letter-spacing: 0.8px
+        color: #4A4A4A
+
+#button 
+    grid-area: button
+    justify-self: end
+    background-color: $black
+    text-transform: uppercase
+    color: $white
+    width: 94px
+    height: 32px
+    padding: auto
+    font-weight: 600
+    size: 10px
+    line-height: 20px
+    letter-spacing: 1px
+    text-align: center
+    border: none
+    border-radius: 3px
+
+#overlay
+    display: none 
+    position: absolute
+    background: rgba(0, 0, 0, 0.32)
+    z-index: 101
+    width: 100vw
+    height: 100vh
+    transition: display .5s;
+
+
+.nav
+    nav
+        margin-top: 41px
+    &_mobile
+        padding: 24px 16px
+        width: 320px
+        background: $white
+        height: 100%
+        &_logoblack
+            display: block
+            width: 88px
+            height: 17px
+            margin: 0 auto
+        &_item
+            display: grid
+            grid-template-areas: "name chevron""line line"
+            grid-template-columns: 1fr 20px
+            font-weight: 600
+            font-size: 11px
+            line-height: 16px
+            color: $black
+            align-items: center
+            margin-top: 10px
+            p
+                font-style: normal
+                font-weight: 600
+                font-size: 11px
+                line-height: 16px
+                letter-spacing: 1.2px
+                text-transform: uppercase
+            &_name 
+                grid-area: name
+            &_line
+                grid-area: line
+                margin-top: 16px
+                height: 1px
+                border: 1px solid #E1E0E1
+                width: 100%
